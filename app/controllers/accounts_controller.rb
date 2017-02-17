@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-class AccountsController < ApplicationController
+class AccountsController < OpenReadController
   before_action :set_account, only: [:show, :update, :destroy]
 
   # GET /accounts
@@ -16,7 +16,7 @@ class AccountsController < ApplicationController
 
   # POST /accounts
   def create
-    @account = Account.new(account_params)
+    @account = current_user.accounts.build(account_params)
 
     if @account.save
       render json: @account, status: :created
@@ -37,17 +37,19 @@ class AccountsController < ApplicationController
   # DELETE /accounts/1
   def destroy
     @account.destroy
+
+    head :no_content
   end
 
   # Use callbacks to share common setup or constraints between actions.
   def set_account
-    @account = Account.find(params[:id])
+    @account = current_user.accounts.find(params[:id])
   end
   private :set_account
   # Only allow a trusted parameter "white list" through.
   def account_params
     params.require(:account)
-          .permit(:web_name, :password_hint, :user_id)
+          .permit(:web_name, :password_hint)
   end
   private :account_params
 end
