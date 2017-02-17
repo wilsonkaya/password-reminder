@@ -10,8 +10,7 @@ curl "${API}${URL_PATH}" \
     --data '{
       "account":{
         "web_name": "'"${WEB_NAME}"'",
-        "password_hint": "'"${PASSWORD_HINT}"'",
-        "user_id": "'"${USER_ID}"'"
+        "password_hint": "'"${PASSWORD_HINT}"'"
       }
     }'
 
