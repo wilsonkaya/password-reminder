@@ -4,7 +4,7 @@ class AccountsController < OpenReadController
 
   # GET /accounts
   def index
-    @accounts = Account.all
+    @accounts = current_user.accounts
 
     render json: @accounts
   end
