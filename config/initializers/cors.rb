@@ -20,8 +20,9 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     origins do |origin, _env|
       '*' == ENV['CLIENT_ORIGIN'] ||
-        origin == ENV['CLIENT_ORIGIN'] || 'https://wilsonkaya.github.io'
-  end
+        origin == ENV['CLIENT_ORIGIN'] ||
+        origin == 'https://wilsonkaya.github.io'
+    end
     resource '*',
              headers: :any,
              methods: [:options, :head, :get, :delete, :patch, :put, :post]
