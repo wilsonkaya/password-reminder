@@ -21,7 +21,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
     origins do |origin, _env|
       '*' == ENV['CLIENT_ORIGIN'] ||
         origin == ENV['CLIENT_ORIGIN'] ||
-        origin == 'https://wilsonkaya.github.io'
+        origin == development_client_origin
     end
     resource '*',
              headers: :any,
