@@ -4,32 +4,23 @@
 - [Browser Template](https://github.com/wilsonkaya/password-reminder-frontend)
 - [Api Server](https://github.com/wilsonkaya/password-reminder)
 
-# Wireframes
+# Wireframes and ERD
 
-[First Page](http://imgur.com/a/oKY4X)
-[Second Page](http://imgur.com/a/lTE7K)
+- [First Page](http://imgur.com/a/oKY4X)
+- [Second Page](http://imgur.com/a/lTE7K)
 
 # User Story
 
-- As a
+-As an user I want to store(create) website name and keywords, so that I can
+reach them wen I need.
 
-  <user> I want to <store(create)> website name and keywords, so that I can
-  reach them wen I need.</store(create)></user>
+-As a user I want to index webpages and password hints so that I can remember
+my passwords
 
-- As a
+- As a user I want to update my password hints so that they will be more
+actual
 
-  <user> I want to <index> webpages and password hints so that I <can remember="" my="" passwords="">
-  </can></index></user>
-
-- As a
-
-  <user> I want to <update> my password hints so that <they will="" be="" more="" actual="">
-  </they></update></user>
-
-- As a
-
-  <user> I want to <delete> password hint because <i don’t="" need="" it="" anymore=""></i></delete></user>
-
+-As a user I want to delete password hint because I don’t need it anymore
 
 
 
