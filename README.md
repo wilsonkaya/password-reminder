@@ -6,7 +6,8 @@
 
 # Wireframes
 
-_[First Page](http://imgur.com/a/oKY4X)_[Second Page](http://imgur.com/a/lTE7K)
+[First Page](http://imgur.com/a/oKY4X)
+[Second Page](http://imgur.com/a/lTE7K)
 
 # User Story
 
@@ -29,10 +30,10 @@ _[First Page](http://imgur.com/a/oKY4X)_[Second Page](http://imgur.com/a/lTE7K)
 
   <user> I want to <delete> password hint because <i don’t="" need="" it="" anymore=""></i></delete></user>
 
-  __
-__
 
-_# Development
+
+
+# Development
 
 - First I have sacaffold accounts and I have created curl request for each route
 - For every route I have defined controllers and I have created their modals.
