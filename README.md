@@ -11,16 +11,16 @@
 
 # User Story
 
--As an user I want to store(create) website name and keywords, so that I can
+- As an user I want to store(create) website name and keywords, so that I can
 reach them wen I need.
 
--As a user I want to index webpages and password hints so that I can remember
+- As a user I want to index webpages and password hints so that I can remember
 my passwords
 
 - As a user I want to update my password hints so that they will be more
 actual
 
--As a user I want to delete password hint because I don’t need it anymore
+- As a user I want to delete password hint because I don’t need it anymore
 
 
 
